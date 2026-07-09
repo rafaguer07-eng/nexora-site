@@ -4,35 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Nexora</title>
-  <meta name="description" content="Book a free audit or reach out to Nexora. We respond within 1 business hour and work exclusively with home service businesses." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ─── Navigation ─── -->
 <nav class="nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">⚡</div>
-        Nexora
-      </a>
+      <a href="index.html" class="nav-logo">Nexora</a>
       <ul class="nav-links">
         <li><a href="services.html">Services</a></li>
         <li><a href="how-it-works.html">How It Works</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Book a Call</a>
-      </div>
-      <button class="nav-hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Book a Call</a></div>
+      <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
-
 <div class="nav-mobile">
   <a href="services.html">Services</a>
   <a href="how-it-works.html">How It Works</a>
@@ -41,168 +31,119 @@
   <a href="contact.html" class="btn btn-primary">Book a Call</a>
 </div>
 
-
-<!-- ─── Page Hero ─── -->
 <div class="page-hero">
-  <canvas class="hero-canvas" id="hero-particles"></canvas>
   <div class="container">
-    <div class="hero-content fade-up">
-      <div class="hero-badge">📞 Let's Talk</div>
-      <h1>Let's Find the Jobs<br>You're <span style="color: var(--accent-highlight);">Leaving on the Table.</span></h1>
-      <p class="hero-sub">Book a free 30-minute audit and we'll show you exactly where leads are slipping through, what it's costing you, and how to fix it. No pitch, no pressure.</p>
-    </div>
+    <span class="label fade-up">Get In Touch</span>
+    <h1 class="fade-up delay-1">Book your<br>free audit.</h1>
+    <p class="hero-sub fade-up delay-2">30 minutes. No pitch. We'll show you exactly where leads are slipping through and what it's costing you.</p>
   </div>
 </div>
 
-
-<!-- ─── Contact Section ─── -->
 <section>
   <div class="container">
     <div class="contact-grid">
 
-      <!-- Calendly Booking -->
       <div>
-        <div class="section-header fade-up">
-          <span class="section-label">Book a Call</span>
-          <h2>Schedule Your Free Audit</h2>
-          <p class="section-sub" style="font-size:0.95rem;">Pick a time that works for you. The call is 30 minutes and we'll cover your current situation, what's costing you, and what the system would look like for your business.</p>
+        <div class="contact-form fade-up">
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="John" />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Smith" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Business Name</label>
+              <input type="text" placeholder="Smith Roofing LLC" />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@smithroofing.com" />
+            </div>
+            <div class="form-group">
+              <label>Trade / Industry</label>
+              <select>
+                <option value="" disabled selected>Select your trade</option>
+                <option>HVAC</option>
+                <option>Roofing</option>
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>Remodeling</option>
+                <option>Landscaping</option>
+                <option>Solar</option>
+                <option>Other Home Service</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Monthly Ad Budget (if any)</label>
+              <select>
+                <option value="" disabled selected>Select a range</option>
+                <option>Not currently running ads</option>
+                <option>Under $1,000/mo</option>
+                <option>$1,000–$3,000/mo</option>
+                <option>$3,000–$10,000/mo</option>
+                <option>$10,000+/mo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Anything else we should know?</label>
+              <textarea placeholder="Tell us about your current challenges..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Submit — Book My Audit</button>
+          </form>
         </div>
+      </div>
 
-        <div class="calendly-block fade-up delay-1">
+      <div class="fade-up delay-1">
+        <div class="calendly-block">
           <div class="cal-icon">📅</div>
-          <h3>Free 30-Minute Audit</h3>
-          <p>Click below to book directly on our calendar. We run calls Mon–Fri, 9am–6pm CT.</p>
-          <div class="cal-url">[CALENDLY_LINK]</div>
-          <a href="#" class="btn btn-primary btn-lg" onclick="alert('Replace [CALENDLY_LINK] with your Calendly embed URL.'); return false;">
-            Pick a Time
-          </a>
-          <p style="font-size:0.8rem; color: var(--muted); margin-top:8px;">No commitment required.</p>
+          <h3>Prefer to book directly?</h3>
+          <p>Skip the form and schedule your free 30-minute audit straight on the calendar.</p>
+          <div class="cal-url">calendly.com/nexoraagency</div>
+          <a href="#" class="btn btn-primary">Open Calendar</a>
         </div>
 
-        <div class="contact-meta fade-up delay-2">
+        <div class="contact-meta">
           <div class="contact-meta-item">
-            <span class="mi">✉️</span>
-            <span>Email: <strong>rafael@nexora.io</strong></span>
+            <span class="mi">📧</span>
+            <div>
+              <strong>Email</strong>
+              hello@nexoraagency.agency
+            </div>
           </div>
           <div class="contact-meta-item">
             <span class="mi">⏱️</span>
-            <span>We respond within <strong>1 business hour</strong> during business days.</span>
+            <div>
+              <strong>Response Time</strong>
+              We reply within 2 business hours
+            </div>
           </div>
           <div class="contact-meta-item">
             <span class="mi">📍</span>
-            <span>Based in <strong>Green Bay, WI</strong> — serving contractors across the U.S.</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Form -->
-      <div>
-        <div class="section-header fade-up">
-          <span class="section-label">Send a Message</span>
-          <h2>Or Drop Us a Note</h2>
-          <p class="section-sub" style="font-size:0.95rem;">Not ready to book a call yet? Fill out the form and we'll reach back out to you directly.</p>
-        </div>
-
-        <form class="contact-form fade-up delay-1" id="contact-form" novalidate>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(920) 555-0100" />
+            <div>
+              <strong>Service Area</strong>
+              We work with home service businesses across the U.S.
             </div>
           </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@smithhvac.com" required />
-          </div>
-
-          <div class="form-group">
-            <label for="biz-type">Business Type</label>
-            <select id="biz-type" name="business_type" required>
-              <option value="" disabled selected>Select your trade</option>
-              <option value="hvac">HVAC</option>
-              <option value="roofing">Roofing</option>
-              <option value="plumbing">Plumbing</option>
-              <option value="electrical">Electrical</option>
-              <option value="remodeling">Remodeling / General Contractor</option>
-              <option value="landscaping">Landscaping</option>
-              <option value="solar">Solar</option>
-              <option value="other">Other Home Service</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">What's your biggest challenge right now?</label>
-            <textarea id="message" name="message" placeholder="Tell us about your current situation — ad spend, lead volume, what's working, what isn't..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top:4px;">
-            Send Message
-          </button>
-
-          <p style="font-size:0.8rem; color:var(--muted); margin-top:14px; text-align:center;">
-            We respond to all messages within 1 business hour.
-          </p>
-
-        </form>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ─── Quick FAQ ─── -->
-<section>
-  <div class="container" style="max-width:800px;">
-    <div class="section-header centered fade-up">
-      <span class="section-label">Before You Call</span>
-      <h2>What to expect on the audit call.</h2>
-    </div>
-
-    <div class="grid-2" style="margin-top:0;">
-      <div class="card fade-up delay-1">
-        <div style="font-size:28px; margin-bottom:12px;">🔍</div>
-        <h4 style="font-family:'Syne',sans-serif; margin-bottom:8px; font-size:1rem;">We Review Your Current Setup</h4>
-        <p>We'll look at where your leads come from, what happens after they come in, and what's slipping through the cracks. Honest, no-fluff assessment.</p>
-      </div>
-      <div class="card fade-up delay-2">
-        <div style="font-size:28px; margin-bottom:12px;">💡</div>
-        <h4 style="font-family:'Syne',sans-serif; margin-bottom:8px; font-size:1rem;">We Show You the Opportunity</h4>
-        <p>Based on your trade, market, and current volume, we'll estimate how much revenue is being left on the table — and what fixing it looks like.</p>
-      </div>
-      <div class="card fade-up delay-3">
-        <div style="font-size:28px; margin-bottom:12px;">🗺️</div>
-        <h4 style="font-family:'Syne',sans-serif; margin-bottom:8px; font-size:1rem;">We Map Out the System</h4>
-        <p>You'll leave with a clear picture of exactly what we'd build for you — no vague promises. Specific steps, specific tools, specific outcomes.</p>
-      </div>
-      <div class="card fade-up delay-4">
-        <div style="font-size:28px; margin-bottom:12px;">🤝</div>
-        <h4 style="font-family:'Syne',sans-serif; margin-bottom:8px; font-size:1rem;">Zero Pressure</h4>
-        <p>If it's not the right fit, we'll tell you. The audit is valuable on its own. We'd rather earn a long-term client than push a bad fit.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ─── Footer ─── -->
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">
-          <div class="nav-logo-icon">⚡</div>
-          Nexora
-        </a>
-        <p class="footer-tagline">More booked jobs. Zero extra effort.</p>
-      </div>
+      <div><div class="footer-logo">Nexora</div><p class="footer-tagline">More booked jobs. Zero extra effort.</p></div>
       <nav class="footer-nav">
         <a href="services.html">Services</a>
         <a href="how-it-works.html">How It Works</a>
@@ -211,10 +152,7 @@
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Nexora. All rights reserved.</span>
-      <span>Built for the trades.</span>
-    </div>
+    <div class="footer-bottom"><span>© 2026 Nexora. All rights reserved.</span><span>Built for the trades.</span></div>
   </div>
 </footer>
 
